@@ -1,0 +1,8 @@
+// laravel new nameproject pour creer un new projet
+// php artisan migrate pour connecter la bdd
+// php artisan serve pour lancer le serveur
+
+// front end
+// npm create vite pour installer le framework frontend que l'on souhaite (dossier react ici)
+// npm install pour installer les dépendances
+// npm run dev pour lancer le serveur
