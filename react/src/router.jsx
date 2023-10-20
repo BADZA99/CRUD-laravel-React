@@ -5,6 +5,7 @@ import Users from './assets/views/Users.jsx';
 import NotFound from './assets/views/NotFound.jsx';
 import DefaultLayout from './assets/components/DefaultLayout.jsx';
 import GuestLayout from './assets/components/GuestLayout.jsx';
+import Dashboard from './assets/components/Dashboard.jsx';
 
 const Router = createBrowserRouter([
     {
@@ -17,7 +18,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: '/dashboard',
-                element:<Users/>   
+                element:<Dashboard/>   
             },
             {
                 path: '/users',
