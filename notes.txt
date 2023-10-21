@@ -7,6 +7,7 @@
 // php artisan make:request SignupRequest pour creer une classe  request dans le dossier reques
 
 //  php artisan make:controller Api/UserController --model=User --requests --resource
+// php artisan db:seed 
 
 
 // front end
