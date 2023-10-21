@@ -17,7 +17,7 @@ export default function UserForm() {
   })
   const [errors, setErrors] = useState(null)
   const [loading, setLoading] = useState(false)
-  const {setNotification} = useStateContext()
+  const {setNotification} = useStateContext();
 
    const onSubmit = ev => {
     ev.preventDefault()
@@ -25,7 +25,7 @@ export default function UserForm() {
       axiosClient.put(`/users/${user.id}`, user)
         .then(() => {
           setNotification('User was successfully updated')
-          navigate('/users')
+          navigate('/users');
         })
         .catch(err => {
           const response = err.response;
