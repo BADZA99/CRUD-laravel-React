@@ -36,7 +36,7 @@ class AuthController extends Controller
        if(!Auth::attempt($credentials)){
         return response([
             'message' => 'provided email adress or password is incorrect'
-        ]);
+        ],422);
        }
        $user=Auth::user();
        $token=$user->createToken('main')->plainTextToken;

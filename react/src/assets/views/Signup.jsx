@@ -11,7 +11,7 @@ export default function Signup() {
   const passwordRef=useRef();
   const passwordConfirmRef=useRef();
   const [errors,setErrors]=useState(null);
-  const {setUser,setToken}=useStateContext()
+  const {setUser,setToken}=useStateContext();
   const onsubmit=(e)=>{
     e.preventDefault()
     // console.log('form submitted')
