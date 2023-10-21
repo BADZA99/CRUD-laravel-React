@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rules\Password;
 
 class LoginRequest extends FormRequest
 {
@@ -23,7 +24,9 @@ class LoginRequest extends FormRequest
     {
         return [
             'email'=>'required|email|exists:users,email',
-            'password'=>'required'
+            'password'=>[
+                'required',
+                ]
         ];
     }
 }
