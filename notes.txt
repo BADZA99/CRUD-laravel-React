@@ -6,6 +6,9 @@
 // php artisan make:controller Api/AuthController creer un controller dans le dossier api
 // php artisan make:request SignupRequest pour creer une classe  request dans le dossier reques
 
+//  php artisan make:controller Api/UserController --model=User --requests --resource
+
+
 // front end
 // npm create vite pour installer le framework frontend que l'on souhaite (dossier react ici)
 // npm install pour installer les dépendances
